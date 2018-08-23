@@ -1,18 +1,18 @@
 // Expression bodies
 var evens = [1, 4, 9, 16]
 var odds = evens.map(v => v + 1)
-
 console.log(odds)
 
-var nums = evens.map((v, i) => v + i)
-
-// Statement bodies
 var fives = []
+var nums = evens.map((v, i) => v + i)
+// Statement bodies
 nums.forEach(v => {
   if (v % 5 === 0) {
     fives.push(v)
   }
 })
+console.log(nums)
+console.log(fives)
 
 // Lexical this
 var bob = {
@@ -32,6 +32,7 @@ function square() {
     for (let number of arguments) {
       numbers.push(number * number);
     }
+
 
     return numbers;
   };
