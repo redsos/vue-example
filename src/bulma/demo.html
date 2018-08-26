@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bulma demo</title>
+  <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.26/css/bulma.min.css'> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+</head>
+
+<body>
+
+  <section class="hero is-primary is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <div>
+          <h1 class="title">
+            SES.Target
+          </h1>
+        </div>
+
+        <div class="level">
+          <div class="level-left">
+            <h2 class="subtitle">
+              Public email delivery service
+            </h2>
+          </div>
+
+          <div class="level-right">
+            <div class="dropdown">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+                  <span>Account, admin </span>
+                  <span class="icon is-small">
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                <div class="dropdown-content">
+                  <a href="#" class="dropdown-item">Profile</a>
+                  <a href="#" class="dropdown-item">Logout</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+            var dropdown = document.querySelector('.dropdown');
+            dropdown.addEventListener('click', function (event) {
+              event.stopPropagation();
+              dropdown.classList.toggle('is-active');
+            });
+          </script>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="section">
+    <div class="container">
+      <hr>
+
+      <div class="columns">
+        <div class="column is-one-fifth">
+          <aside class="menu">
+            <p class="menu-label">General</p>
+            <ul class="menu-list">
+              <li>
+                <a class="is-active">Dashboard</a>
+              </li>
+              <li>
+                <a>Customers</a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+
+        <div class="column">
+
+          <nav class="level">
+            <div class="level-left"></div>
+            <div class="level-right">
+              <div class="field" style="padding-right: 30px">
+                <p class="control has-icons-left has-icons-right">
+                  <input class="input" type="email" placeholder="Normal input">
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-search"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="delete is-small clear-search"></i>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </nav>
+
+
+          <table class="table is-fullwidth">
+            <thead>
+              <tr>
+                <th>
+                  <abbr title="Position">Pos</abbr>
+                </th>
+                <th>Status</th>
+                <th>Detail</th>
+                <th>More</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <span class="tag is-success">Success</span>
+                </td>
+                <td>
+                  <div>
+                    <span class="tag is-light">EID:</span>
+                    <span class="tag is-white">de52feac-556c-4189-b363-46a5e23a9c19</span>
+                    <span class="tag is-light">Date:</span>
+                    <span class="tag is-white">2018-08-16 15:00</span>
+                  </div>
+                  <div>
+                    <span class="tag is-light">From:</span>
+                    <span class="tag is-white">no-reply@test.com</span>
+                    <span class="tag is-light">To:</span>
+                    <span class="tag is-white">gunsluo@gmail.com,jerrylou@gmail.com</span>
+                  </div>
+                </td>
+                <td>
+                  <a class="button is-info is-outlined">More Info</a>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>
+                  <span class="tag is-danger">Error</span>
+                </td>
+                <td>
+                  <div>
+                    <span class="tag is-light">EID:</span>
+                    <span class="tag is-white">de52feac-556c-4189-b363-46a5e23a9c19</span>
+                    <span class="tag is-light">Date:</span>
+                    <span class="tag is-white">2018-08-16 15:00</span>
+                  </div>
+                  <div>
+                    <span class="tag is-light">From:</span>
+                    <span class="tag is-white">no-reply@test.com</span>
+                    <span class="tag is-light">To:</span>
+                    <span class="tag is-white">gunsluo@gmail.com,jerrylou@gmail.com</span>
+                  </div>
+                </td>
+                <td>
+                  <a class="button is-info is-outlined">More Info</a>
+                </td>
+              </tr>
+              <tr class="is-selected">
+                <td>3</td>
+                <td>
+                  <span class="tag is-success">Success</span>
+                </td>
+                <td>
+                  <div>
+                    <span class="tag is-light is-primary">EID:</span>
+                    <span class="tag is-white is-primary">de52feac-556c-4189-b363-46a5e23a9c19</span>
+                    <span class="tag is-light is-primary">Date:</span>
+                    <span class="tag is-white is-primary">2018-08-16 15:00</span>
+                  </div>
+                  <div>
+                    <span class="tag is-light is-primary">From:</span>
+                    <span class="tag is-white is-primary">no-reply@test.com</span>
+                    <span class="tag is-light is-primary">To:</span>
+                    <span class="tag is-white is-primary">gunsluo@gmail.com,jerrylou@gmail.com</span>
+                  </div>
+                </td>
+                <td>
+                  <a class="button is-info is-inverted is-outlined">More Info</a>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>
+                  <span class="tag is-success">Success</span>
+                </td>
+                <td>
+                  <div>
+                    <span class="tag is-light">EID:</span>
+                    <span class="tag is-white">de52feac-556c-4189-b363-46a5e23a9c19</span>
+                    <span class="tag is-light">Date:</span>
+                    <span class="tag is-white">2018-08-16 15:00</span>
+                  </div>
+                  <div>
+                    <span class="tag is-light">From:</span>
+                    <span class="tag is-white">no-reply@test.com</span>
+                    <span class="tag is-light">To:</span>
+                    <span class="tag is-white">gunsluo@gmail.com,jerrylou@gmail.com</span>
+                  </div>
+                </td>
+                <td>
+                  <a class="button is-info is-outlined">More Info</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- pagination -->
+          <nav class="pagination is-small" role="navigation" aria-label="pagination">
+            <a class="pagination-previous">Previous</a>
+            <a class="pagination-next">Next page</a>
+            <ul class="pagination-list">
+              <li>
+                <a class="pagination-link" aria-label="Goto page 1">1</a>
+              </li>
+              <li>
+                <span class="pagination-ellipsis">&hellip;</span>
+              </li>
+              <li>
+                <a class="pagination-link" aria-label="Goto page 45">45</a>
+              </li>
+              <li>
+                <a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a>
+              </li>
+              <li>
+                <a class="pagination-link" aria-label="Goto page 47">47</a>
+              </li>
+              <li>
+                <span class="pagination-ellipsis">&hellip;</span>
+              </li>
+              <li>
+                <a class="pagination-link" aria-label="Goto page 86">86</a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>SES</strong> writed by
+        <a href="https://gitlab.com/target-digital-transformation">Target technical team</a>. Contact:
+        <a href="mailto:abc@example.com?subjec=">target@digitalenergycloud.com</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
