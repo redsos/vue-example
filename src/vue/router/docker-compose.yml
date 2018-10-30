@@ -1,0 +1,14 @@
+version: "3"
+services:
+
+  vue-router:
+    image: nginx:alpine
+    container_name: vue-router
+    command: ["nginx", "-g", "daemon off;"]
+    ports:
+      - 8080:80
+    volumes:
+      - ./src:/usr/share/nginx/html
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/nginx_proxy.conf:/etc/nginx/nginx_proxy.conf
+
