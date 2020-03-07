@@ -1,4 +1,5 @@
 # demo-auth
+dexidp/dex client app
 
 ## Project setup
 ```
